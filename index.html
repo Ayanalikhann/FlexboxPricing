@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: black;
+      }
+      .pricing-container{
+        display:flex;
+        gap:40px;
+        flex-flow:row wrap;
+        min-height:60vh;
+        flex-basis:100px;
+        justify-content: center;
+        align-content: center;
+      }
+      .pricing-plan{
+       border-radius: 2%;
+        background-color: lightgrey;
+        text-align: center;
+        height: 220px;
+        width: 300px;
+      }
+      .plan-button{
+        border: 0px;
+        background-color: darkorange;
+        color: white;
+        height: 30px;
+        border-radius: 10%;
+      } 
+      li{
+        list-style: none;
+      }
+      .plan-title{
+        margin: 10px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .plan-price{
+        margin: 10px;
+        font-size: 30px;
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      li{
+        margin: 10px;
+        font-size: 12px;
+      }
+      H1{
+        text-align: center;
+        color: red;
+        font-size: 50px;
+      }
+      
+      @media (max-width: 1250px) {
+        .pricing-plan{
+          flex-direction: column;
+          flex-basis: 100px;
+          flex-grow: 0;
+        }
+        .haha{
+        height: 235px;
+      }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>NETFLIX</h1>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div><hr />
+        <div class="plan-price">₹100/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan haha">
+        <div class="plan-title">Standard</div><hr />
+        <div class="plan-price">₹200/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div><hr />
+        <div class="plan-price">₹300/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
